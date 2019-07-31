@@ -1,0 +1,27 @@
+var group__API__Data__Interfaces_structstarpu__data__interface__ops =
+[
+    [ "register_data_handle", "group__API__Data__Interfaces.html#ab92c5c96a67820888d933af69029d8b1", null ],
+    [ "allocate_data_on_node", "group__API__Data__Interfaces.html#afb8adfbac498be2eb6a587460f161e73", null ],
+    [ "free_data_on_node", "group__API__Data__Interfaces.html#ac90316eb45dc6e70aa3438225ce95d35", null ],
+    [ "init", "group__API__Data__Interfaces.html#ac8c58869241aed028d60473bf14a5699", null ],
+    [ "copy_methods", "group__API__Data__Interfaces.html#afd365e7e0abc01f07b6d7b9201c4ce22", null ],
+    [ "handle_to_pointer", "group__API__Data__Interfaces.html#a107e8ed65a0f79e825838f44e1de7a33", null ],
+    [ "to_pointer", "group__API__Data__Interfaces.html#a6f5eda1c249521fdd6fa4e5b574f53d6", null ],
+    [ "pointer_is_inside", "group__API__Data__Interfaces.html#ac4b9a235155e1f2c98618cc8c24d3d21", null ],
+    [ "get_size", "group__API__Data__Interfaces.html#a0e8e1db77d7a2113df9d6d27dd4b8d17", null ],
+    [ "get_alloc_size", "group__API__Data__Interfaces.html#aa15a9ec57fd090fa18c843dc8fadd97d", null ],
+    [ "footprint", "group__API__Data__Interfaces.html#a06b256fe4ab0be7821a28ba24d2f02df", null ],
+    [ "alloc_footprint", "group__API__Data__Interfaces.html#abc69fa030b4398af1663af656d91c2c5", null ],
+    [ "compare", "group__API__Data__Interfaces.html#a79dbc0a279510b9daacfa82248cc3f09", null ],
+    [ "alloc_compare", "group__API__Data__Interfaces.html#a223bf2a2e0fe3a2c8042bdb90605c24d", null ],
+    [ "display", "group__API__Data__Interfaces.html#ab5325b67d044c46f55dee56e32f352aa", null ],
+    [ "describe", "group__API__Data__Interfaces.html#ad3269b852c1ac5764fdc52f05e9d65e9", null ],
+    [ "interfaceid", "group__API__Data__Interfaces.html#a755b7d337f0ac2bdf8752bba1039e1b4", null ],
+    [ "interface_size", "group__API__Data__Interfaces.html#a8c4ce623e92d8fd3d87e0ab841ae6038", null ],
+    [ "is_multiformat", "group__API__Data__Interfaces.html#ae56f2716fc0a28af725cd6e4148a6844", null ],
+    [ "dontcache", "group__API__Data__Interfaces.html#a2c4333ac3a911e749197069fadca1568", null ],
+    [ "get_mf_ops", "group__API__Data__Interfaces.html#a5dc46b35ed7a3c9bf169b2e6068edb38", null ],
+    [ "pack_data", "group__API__Data__Interfaces.html#a5fed1490798c49a6f26c91f1bc4da360", null ],
+    [ "unpack_data", "group__API__Data__Interfaces.html#ab997f2654cd769dbd3413f5a90090a69", null ],
+    [ "name", "group__API__Data__Interfaces.html#aa0fcbed50f81b86a047fbe53bf6b2591", null ]
+];

@@ -1,0 +1,129 @@
+#!/bin/bash
+# StarPU --- Runtime system for heterogeneous multicore architectures.
+#
+# Copyright (C) 2017                                     CNRS
+# Copyright (C) 2016                                     Inria
+# Copyright (C) 2014-2016,2019                            Université de Bordeaux
+#
+# StarPU is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation; either version 2.1 of the License, or (at
+# your option) any later version.
+#
+# StarPU is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# See the GNU Lesser General Public License in COPYING.LGPL for more details.
+#
+# Script for running starpu-mpi application in simgrid mode
+
+prefix=/mnt/scratch/buildbot/starpu//conan-starpu-1_3_2-tarball-release/install
+SMPIRUN=
+STARPU_DATADIR=${prefix}/share
+STARPU_XSLTDIR=$STARPU_DATADIR/starpu
+SOURCE_DATADIR=/mnt/scratch/buildbot/starpu/conan-starpu-1_3_2-tarball-release/build/tools
+BUILDDIR=/mnt/scratch/buildbot/starpu/conan-starpu-1_3_2-tarball-release/build/tools
+
+SMPI_VERSION=$($SMPIRUN -version | grep " version " | sed -e 's/.* \([0-9]*\.[0-9]*\).*/\1/')
+SMPI_MAJOR=${SMPI_VERSION%.*}
+SMPI_MINOR=${SMPI_VERSION#*.}
+
+if [ "$SMPI_MAJOR" -ge 4 -o \( "$SMPI_MAJOR" = 3 -a "$SMPI_MINOR" -ge 13 \) ]
+then
+	DTD=http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd
+	V=4
+	VF=.v4
+	DASH=-
+else
+	DTD=http://simgrid.gforge.inria.fr/simgrid.dtd
+	V=3
+	VF=""
+	DASH=_
+fi
+
+if [ "$SMPI_MAJOR" -ge 4 -o \( "$SMPI_MAJOR" = 3 -a "$SMPI_MINOR" -ge 16 \) ]
+then
+	PRIV_OPT="--cfg=smpi/privatization:yes"
+else
+	PRIV_OPT="--cfg=smpi/privatize${DASH}global${DASH}variables:yes"
+fi
+
+# When executed from source, take xslt from source
+[ "$0" -ef $BUILDDIR/starpu_smpirun ] && STARPU_XSLTDIR=$SOURCE_DATADIR
+
+MPI_PLATFORM=""
+MPI_HOSTFILE=""
+NP=""
+while true; do
+	case "$1" in
+		"-platform")
+			MPI_PLATFORM=$2
+			if [ ! -r "$MPI_PLATFORM" ]; then
+				echo "$MPI_PLATFORM can't be read"
+				exit 1
+			fi
+			shift 2
+			;;
+		"-hostfile")
+			MPI_HOSTFILE=$2
+			if [ ! -r "$MPI_HOSTFILE" ]; then
+				echo "$MPI_HOSTFILE can't be read"
+				exit 1
+			fi
+			shift 2
+			;;
+		"-np")
+			NP=$2
+			shift 2
+			;;
+		*)
+			break
+			;;
+	esac
+done
+
+if [ -z "$MPI_PLATFORM" ] || [ -z "$MPI_HOSTFILE" ]; then
+	echo "$0 -platform PLATFORM -hostfile HOSTFILE [ -np N ] [ ... ] program [ args ]"
+	exit 2
+fi
+
+PLATFORM=$(mktemp /tmp/StarPU-MPI-platform-XXXXXXXX.xml)
+
+[ -n "$STARPU_HOME" ] || STARPU_HOME=$HOME
+[ -n "$STARPU_PERF_MODEL_DIR" ] || STARPU_PERF_MODEL_DIR=$STARPU_HOME/.starpu/sampling
+[ -n "$STARPU_HOSTNAME" ] || STARPU_HOSTNAME=$(hostname)
+NODE_PLATFORM=$STARPU_PERF_MODEL_DIR/bus/${STARPU_HOSTNAME}.platform$VF.xml
+
+[ -n "$NP" ] || NP=$(grep -v "^$" $MPI_HOSTFILE | wc -l)
+
+if ! type xsltproc > /dev/null 2> /dev/null
+then
+	echo xsltproc is needed for starpu simgrid mpi.
+	exit 1
+fi
+
+(
+	cat << EOF
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "$DTD">
+<platform version="$V">
+<AS id="ASroot" routing="None">
+EOF
+	tail -n +3 $MPI_PLATFORM | grep -v '<platform' | grep -v '</platform'
+	for i in $(seq 0 $((NP - 1))) ; do
+		xsltproc --novalid --stringparam ASname StarPU-MPI$i $STARPU_XSLTDIR/starpu_smpi.xslt $NODE_PLATFORM | grep -v network/ | tail -n +4 | head -n -1
+	done
+	cat << \EOF
+</AS>
+</platform>
+EOF
+) > $PLATFORM
+
+STACKSIZE=$(ulimit -s)
+[ "$STACKSIZE" != unlimited ] || STACKSIZE=8192
+$SMPIRUN -platform $PLATFORM -hostfile $MPI_HOSTFILE -np $NP "$@" $PRIV_OPT --cfg=smpi/simulate${DASH}computation:no --cfg=contexts/stack${DASH}size:$STACKSIZE
+RET=$?
+
+rm -f $PLATFORM
+exit $RET

@@ -1,0 +1,27 @@
+var group__API__Modularized__Scheduler_structstarpu__sched__component =
+[
+    [ "tree", "group__API__Modularized__Scheduler.html#a46c8e9094cfcc00e36c31d8e6feced59", null ],
+    [ "workers", "group__API__Modularized__Scheduler.html#a0ad3662dfe6897d86099b59cace66b8c", null ],
+    [ "workers_in_ctx", "group__API__Modularized__Scheduler.html#a461cccae50507f274c135375573780ea", null ],
+    [ "data", "group__API__Modularized__Scheduler.html#a2042f495e746d4ec1ac84c8eb6f5b37d", null ],
+    [ "name", "group__API__Modularized__Scheduler.html#a012f472a9b83fde8d51b7acf9e9f2ff1", null ],
+    [ "nchildren", "group__API__Modularized__Scheduler.html#aa2e8258747cb3bb967fef0519d139579", null ],
+    [ "children", "group__API__Modularized__Scheduler.html#a6979a86b074eb35903929f98272b2ab2", null ],
+    [ "nparents", "group__API__Modularized__Scheduler.html#aaeece58ba0e3476e9c66fdb31e71784b", null ],
+    [ "parents", "group__API__Modularized__Scheduler.html#a541135ecb60d398ac6b2d98c1a59fb2c", null ],
+    [ "add_child", "group__API__Modularized__Scheduler.html#a27af06d3f659a32cb4f3b9599fba00d8", null ],
+    [ "remove_child", "group__API__Modularized__Scheduler.html#a6eb7354ca7f5b96634eec2bb44f14ae4", null ],
+    [ "add_parent", "group__API__Modularized__Scheduler.html#a5c357391adcfaacde9bae236172721d4", null ],
+    [ "remove_parent", "group__API__Modularized__Scheduler.html#afec9d54f6492609aeaf505165f3dd883", null ],
+    [ "push_task", "group__API__Modularized__Scheduler.html#aa989aab198005eff62cd799b02ded7cb", null ],
+    [ "pull_task", "group__API__Modularized__Scheduler.html#a4942440fbea849c93e75867651267201", null ],
+    [ "can_push", "group__API__Modularized__Scheduler.html#abf315d3c1f60fbcab6a001f7925dc4fa", null ],
+    [ "can_pull", "group__API__Modularized__Scheduler.html#a4c7d5c03e2acf93fa737540b35eb1001", null ],
+    [ "notify", "group__API__Modularized__Scheduler.html#a5fc2d2bb13076b988b77cc0858489630", null ],
+    [ "estimated_load", "group__API__Modularized__Scheduler.html#a86ea24c3238c3424b622496cbbd0bbd1", null ],
+    [ "estimated_end", "group__API__Modularized__Scheduler.html#a78d7ba588cf0d03007db07afc3d38bc3", null ],
+    [ "deinit_data", "group__API__Modularized__Scheduler.html#a404381c9bd5c918e8e29ea1aae092067", null ],
+    [ "notify_change_workers", "group__API__Modularized__Scheduler.html#a22e788223ba09f3faf57859f8e0cfefc", null ],
+    [ "properties", "group__API__Modularized__Scheduler.html#a9d6dd088345bfc11045a3954e4c02fb4", null ],
+    [ "obj", "group__API__Modularized__Scheduler.html#ac2709f00c42977b8df96d30015fc9cb1", null ]
+];

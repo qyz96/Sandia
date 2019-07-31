@@ -1,0 +1,4 @@
+\form#0:\[ T_{kernel} = a + b(M^{\alpha_1} * N^{\beta_1} * K^{\gamma_1}) + c(M^{\alpha_2} * N^{\beta_2} * K^{\gamma_2}) + ... \]
+\form#1:$M, N, K$
+\form#2:$\alpha, \beta, \gamma$
+\form#3:$a, b, c$

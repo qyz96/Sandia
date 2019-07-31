@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['nb_5fbuffers_5ftotransfer',['nb_buffers_totransfer',['../group__workers.html#a5345947456e5b09f4fcd88e724c99deb',1,'_starpu_worker']]],
+  ['nb_5fbuffers_5ftransferred',['nb_buffers_transferred',['../group__workers.html#a43cfe046a34a1d78ab4115988e397d44',1,'_starpu_worker']]],
+  ['nbindid',['nbindid',['../group__workers.html#a520d9d24f2c28269becdb94d31676ebd',1,'_starpu_machine_config']]],
+  ['ncombinedworkers',['ncombinedworkers',['../group__workers.html#a771b4700c8897c01b6a0cb4673c59793',1,'_starpu_machine_topology']]],
+  ['ncpus',['ncpus',['../group__workers.html#a74b870ca40700d6831e4214fcbc0d1e2',1,'_starpu_machine_topology']]],
+  ['ncudagpus',['ncudagpus',['../group__workers.html#a5544a839bf52f8d8abd04162346365e7',1,'_starpu_machine_topology']]],
+  ['nhwcpus',['nhwcpus',['../group__workers.html#ada81a88076c8254525e496de0a668131',1,'_starpu_machine_topology']]],
+  ['nhwcudagpus',['nhwcudagpus',['../group__workers.html#a86958a5348eda2a5d424783bda91e43e',1,'_starpu_machine_topology']]],
+  ['nhwmiccores',['nhwmiccores',['../group__workers.html#ad748884adf548e028580fabf44421bdf',1,'_starpu_machine_topology']]],
+  ['nhwmicdevices',['nhwmicdevices',['../group__workers.html#a0eb35409a6282462b175be7b5d65cf13',1,'_starpu_machine_topology']]],
+  ['nhwmpi',['nhwmpi',['../group__workers.html#a62f0b84c2a1afd29ea986028a5f52f2e',1,'_starpu_machine_topology']]],
+  ['nhwmpicores',['nhwmpicores',['../group__workers.html#ab0ef050bcb66c4bf071a1dc83f56b593',1,'_starpu_machine_topology']]],
+  ['nhwopenclgpus',['nhwopenclgpus',['../group__workers.html#a32c72fc0bc2094f16119ff6fb3ce99a9',1,'_starpu_machine_topology']]],
+  ['nhwpus',['nhwpus',['../group__workers.html#ab43b77b5e454574a6f27f15f9dd93c8f',1,'_starpu_machine_topology']]],
+  ['nmpidevices',['nmpidevices',['../group__workers.html#a0e593051500db2705e457fa9f882a436',1,'_starpu_machine_topology']]],
+  ['nopenclgpus',['nopenclgpus',['../group__workers.html#a9939f4b2526e3af1aa1c3b87b76c1402',1,'_starpu_machine_topology']]],
+  ['nsched_5fctxs',['nsched_ctxs',['../group__workers.html#a7550d943f66c949f9f1947ce49f45539',1,'_starpu_worker']]],
+  ['ntasks',['ntasks',['../group__workers.html#ab5de3173bdb2a3befb2d09aa264d4126',1,'_starpu_worker']]],
+  ['numa_5fmemory_5fnode',['numa_memory_node',['../group__workers.html#a6e439b5283863229377e541493db11ea',1,'_starpu_worker']]],
+  ['nworkers',['nworkers',['../group__workers.html#a4b67b4f824998e7caed66b12e0e5e9b0',1,'_starpu_machine_topology']]]
+];

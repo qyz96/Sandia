@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cl_5fend',['cl_end',['../group__workers.html#af8cbb334c1f5922e80118776e6f6ea54',1,'_starpu_worker']]],
+  ['cl_5fstart',['cl_start',['../group__workers.html#aaa0bbd65ebd1cf4e3c3e4b3ab8b6e41f',1,'_starpu_worker']]],
+  ['combined_5fworkerid',['combined_workerid',['../group__workers.html#adfe4e74872264cffcbeb4e20b2114b4f',1,'_starpu_worker']]],
+  ['combined_5fworkers',['combined_workers',['../group__workers.html#a011d0cdcc0a907ff74dbd4f6fd0f9ed9',1,'_starpu_machine_config']]],
+  ['conf',['conf',['../group__workers.html#afb1002a30fd4ce6511410a15bb334c50',1,'_starpu_machine_config']]],
+  ['cpus_5fnodeid',['cpus_nodeid',['../group__workers.html#a79aaf2e2424138413a62a16a3213dd0c',1,'_starpu_machine_config']]],
+  ['ctx_5fchange_5flist',['ctx_change_list',['../group__workers.html#a062fe70150e8cd57f92434b59931d802',1,'_starpu_worker']]],
+  ['cuda_5fnodeid',['cuda_nodeid',['../group__workers.html#ae276a76feeb600b181238c15a3516c59',1,'_starpu_machine_config']]],
+  ['current_5fbindid',['current_bindid',['../group__workers.html#acc50cd218bbfe5d49255eef6e8768961',1,'_starpu_machine_config']]],
+  ['current_5fcuda_5fgpuid',['current_cuda_gpuid',['../group__workers.html#a2dbdcf109aff3949bb173941a0573add',1,'_starpu_machine_config']]],
+  ['current_5fmic_5fdeviceid',['current_mic_deviceid',['../group__workers.html#ad42cd17675ba021b07cb7467f2a0bafb',1,'_starpu_machine_config']]],
+  ['current_5fmpi_5fdeviceid',['current_mpi_deviceid',['../group__workers.html#afad0dc944ef9fc8d6a6f15dd3d380654',1,'_starpu_machine_config']]],
+  ['current_5fopencl_5fgpuid',['current_opencl_gpuid',['../group__workers.html#a71d68704341ac2cedbc1800e1acdbd5b',1,'_starpu_machine_config']]],
+  ['current_5fordered_5ftask',['current_ordered_task',['../group__workers.html#ae129dfd5646eb40562dd9526435fcd56',1,'_starpu_worker']]],
+  ['current_5fordered_5ftask_5forder',['current_ordered_task_order',['../group__workers.html#a7abd55f94998380f1ce438d048823e16',1,'_starpu_worker']]],
+  ['current_5frank',['current_rank',['../group__workers.html#a38785abc611cbe7ce7d32f4632cf440e',1,'_starpu_worker']]],
+  ['current_5ftask',['current_task',['../group__workers.html#a14eb945aebbb53418673d8a8ba56a861',1,'_starpu_worker']]],
+  ['current_5ftasks',['current_tasks',['../group__workers.html#a8d1baaeb5e584506143f0ac5b2b3000f',1,'_starpu_worker']]]
+];

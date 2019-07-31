@@ -1,0 +1,46 @@
+var group__API__FxT__Support =
+[
+    [ "starpu_fxt_codelet_event", "group__API__FxT__Support.html#structstarpu__fxt__codelet__event", [
+      [ "symbol", "group__API__FxT__Support.html#a51da03a4801f1824a16cddcbcc515054", null ],
+      [ "workerid", "group__API__FxT__Support.html#afc9bb7935e058b443c4fcc09d7ad8048", null ],
+      [ "perfmodel_archname", "group__API__FxT__Support.html#afbf2789aa78c18cf8ee100b66319cba4", null ],
+      [ "hash", "group__API__FxT__Support.html#a85f710c40c64a8dcd3bcff0b676c0e41", null ],
+      [ "size", "group__API__FxT__Support.html#aede9bed8901dd4c7c30a251b621b0565", null ],
+      [ "time", "group__API__FxT__Support.html#af2efbb950a21314b45a9b90fb588d940", null ]
+    ] ],
+    [ "starpu_fxt_options", "group__API__FxT__Support.html#structstarpu__fxt__options", [
+      [ "per_task_colour", "group__API__FxT__Support.html#a228a17390ce1323fd21498ad465af192", null ],
+      [ "no_events", "group__API__FxT__Support.html#a62d7439e81969dbc0794ac43d30bfa4c", null ],
+      [ "no_counter", "group__API__FxT__Support.html#a8002d7f02c63afa09bc6e0d1af44d9f8", null ],
+      [ "no_bus", "group__API__FxT__Support.html#adb9825862777f8b976acc913c012ae29", null ],
+      [ "no_flops", "group__API__FxT__Support.html#a82629412eecfac6ccf59e7a94d8d2d7c", null ],
+      [ "ninputfiles", "group__API__FxT__Support.html#a027b243e7f06772e3eb78f5ba3f7fed9", null ],
+      [ "no_smooth", "group__API__FxT__Support.html#a3afccfcbcdd91f81f326959186907d28", null ],
+      [ "no_acquire", "group__API__FxT__Support.html#a1a3757d68d3072c7aa2e56d7baff4c2e", null ],
+      [ "memory_states", "group__API__FxT__Support.html#a2d4a93555ba254e9c39a904ac8671810", null ],
+      [ "internal", "group__API__FxT__Support.html#a1cbc27b05ab111548472c0ea3bb6243f", null ],
+      [ "label_deps", "group__API__FxT__Support.html#ae87e4538f952540423f7adc66df6b797", null ],
+      [ "filenames", "group__API__FxT__Support.html#aca5731179ed330550ce7a1dc6e145230", null ],
+      [ "out_paje_path", "group__API__FxT__Support.html#ad0b6f723cbbe343bcabb2d710dd8113d", null ],
+      [ "distrib_time_path", "group__API__FxT__Support.html#a165d670beca0dc37a0c5ca23927061c0", null ],
+      [ "activity_path", "group__API__FxT__Support.html#a7a129f4ac56b319e0ce9d73962685341", null ],
+      [ "dag_path", "group__API__FxT__Support.html#aa44014774a3950fadcda07d87032113d", null ],
+      [ "tasks_path", "group__API__FxT__Support.html#a2d92eaf1ad40dbd1dc61a59d38a33940", null ],
+      [ "data_path", "group__API__FxT__Support.html#aff04927098cba867f0949cc54412887f", null ],
+      [ "anim_path", "group__API__FxT__Support.html#a16eaaa188fb40fe0e625b0de95dee894", null ],
+      [ "states_path", "group__API__FxT__Support.html#ab2af75bfea101d05acd8cc4ca42e326b", null ],
+      [ "file_prefix", "group__API__FxT__Support.html#a069e624dee891479cec370e8078b26f5", null ],
+      [ "file_offset", "group__API__FxT__Support.html#a2ce33ee285499c1ca00f149293a1978d", null ],
+      [ "file_rank", "group__API__FxT__Support.html#ad989ef1acebea5296285ba1543b9b8d3", null ],
+      [ "worker_names", "group__API__FxT__Support.html#a3999b83fc470285e27bcdd04c9fa7f86", null ],
+      [ "worker_archtypes", "group__API__FxT__Support.html#a41dd735e884cd2e03ecd52e9d030ec6f", null ],
+      [ "nworkers", "group__API__FxT__Support.html#a2a1bec69241ff9acf6f991492de18190", null ],
+      [ "dumped_codelets", "group__API__FxT__Support.html#ae8b5695146698ba1d5aef8c9237b5272", null ],
+      [ "dumped_codelets_count", "group__API__FxT__Support.html#a66ac04619aec557f95ddf5a5df848341", null ]
+    ] ],
+    [ "starpu_fxt_autostart_profiling", "group__API__FxT__Support.html#ga6a7af6697ae7a67161d3655c59215c09", null ],
+    [ "starpu_fxt_start_profiling", "group__API__FxT__Support.html#ga5793bf5c8fc0bedf76d18a5fa38593df", null ],
+    [ "starpu_fxt_stop_profiling", "group__API__FxT__Support.html#ga52a3e1a95689315f0b789a3325ec2a90", null ],
+    [ "starpu_fxt_trace_user_event", "group__API__FxT__Support.html#ga2e55ad671e94b6161755717b1c8b44c1", null ],
+    [ "starpu_fxt_trace_user_event_string", "group__API__FxT__Support.html#gabe14377ea858ed3b40c1b469d7a4a4ea", null ]
+];
