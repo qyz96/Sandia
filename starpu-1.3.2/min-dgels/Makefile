@@ -1,5 +1,5 @@
 CC = gcc
-LD = /usr/bin/ld -m elf_x86_64
+LD = /Library/Developer/CommandLineTools/usr/bin/ld
 
 CLAPACK=base
 ADDITIONAL=additional

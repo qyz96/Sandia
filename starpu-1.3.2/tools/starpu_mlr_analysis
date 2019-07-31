@@ -20,7 +20,7 @@
 set -e # fail fast
 
 # File names
-SOURCE_DIR=/mnt/scratch/buildbot/starpu/conan-starpu-1_3_2-tarball-release/build/tools
+SOURCE_DIR=/Users/yizhouqian/dropbox/Sandia/Code/Sandia/starpu-1.3.2/tools
 
 outputfile="mlr_analysis.html"
 analysis_script="$SOURCE_DIR/starpu_mlr_analysis.Rmd"

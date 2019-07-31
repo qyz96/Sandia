@@ -18,12 +18,12 @@
 #
 # Script for running starpu-mpi application in simgrid mode
 
-prefix=/mnt/scratch/buildbot/starpu//conan-starpu-1_3_2-tarball-release/install
+prefix=/usr/local
 SMPIRUN=
 STARPU_DATADIR=${prefix}/share
 STARPU_XSLTDIR=$STARPU_DATADIR/starpu
-SOURCE_DATADIR=/mnt/scratch/buildbot/starpu/conan-starpu-1_3_2-tarball-release/build/tools
-BUILDDIR=/mnt/scratch/buildbot/starpu/conan-starpu-1_3_2-tarball-release/build/tools
+SOURCE_DATADIR=/Users/yizhouqian/dropbox/Sandia/Code/Sandia/starpu-1.3.2/tools
+BUILDDIR=/Users/yizhouqian/dropbox/Sandia/Code/Sandia/starpu-1.3.2/tools
 
 SMPI_VERSION=$($SMPIRUN -version | grep " version " | sed -e 's/.* \([0-9]*\.[0-9]*\).*/\1/')
 SMPI_MAJOR=${SMPI_VERSION%.*}

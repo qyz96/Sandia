@@ -1,0 +1,576 @@
+cl_enqueuereadimage.lo: cl_enqueuereadimage.c socl.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/sys/_pthread/_pthread_types.h \
+  /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
+  /usr/include/sys/_types/_size_t.h /usr/include/sys/_types/_null.h \
+  /usr/include/sys/_types/_rsize_t.h /usr/include/machine/types.h \
+  /usr/include/i386/types.h /usr/include/sys/_types/_int8_t.h \
+  /usr/include/sys/_types/_int16_t.h /usr/include/sys/_types/_int32_t.h \
+  /usr/include/sys/_types/_int64_t.h /usr/include/sys/_types/_u_int8_t.h \
+  /usr/include/sys/_types/_u_int16_t.h \
+  /usr/include/sys/_types/_u_int32_t.h \
+  /usr/include/sys/_types/_u_int64_t.h \
+  /usr/include/sys/_types/_intptr_t.h \
+  /usr/include/sys/_types/_uintptr_t.h \
+  /usr/include/sys/_types/_errno_t.h /usr/include/sys/_types/_ssize_t.h \
+  /usr/include/strings.h /usr/include/secure/_strings.h \
+  /usr/include/secure/_common.h /usr/include/secure/_string.h \
+  /usr/include/stdlib.h /usr/include/sys/wait.h \
+  /usr/include/sys/_types/_pid_t.h /usr/include/sys/_types/_id_t.h \
+  /usr/include/sys/signal.h /usr/include/sys/appleapiopts.h \
+  /usr/include/machine/signal.h /usr/include/i386/signal.h \
+  /usr/include/machine/_mcontext.h /usr/include/i386/_mcontext.h \
+  /usr/include/mach/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/_pthread/_pthread_attr_t.h \
+  /usr/include/sys/_types/_sigaltstack.h \
+  /usr/include/sys/_types/_ucontext.h \
+  /usr/include/sys/_types/_sigset_t.h /usr/include/sys/_types/_uid_t.h \
+  /usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stdint.h \
+  /usr/include/stdint.h /usr/include/_types/_uint8_t.h \
+  /usr/include/_types/_uint16_t.h /usr/include/_types/_uint32_t.h \
+  /usr/include/_types/_uint64_t.h /usr/include/_types/_intmax_t.h \
+  /usr/include/_types/_uintmax_t.h /usr/include/sys/_types/_timeval.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/sys/_types/_ct_rune_t.h /usr/include/sys/_types/_rune_t.h \
+  /usr/include/sys/_types/_wchar_t.h /usr/include/malloc/_malloc.h \
+  /usr/include/sys/_types/_dev_t.h /usr/include/sys/_types/_mode_t.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/sys/_types/_posix_vdisable.h \
+  /usr/include/sys/_types/_seek_set.h /usr/include/sys/_types/_gid_t.h \
+  /usr/include/sys/_types/_off_t.h /usr/include/sys/_types/_useconds_t.h \
+  /usr/include/sys/select.h /usr/include/sys/_types/_fd_def.h \
+  /usr/include/sys/_types/_timespec.h /usr/include/sys/_types/_time_t.h \
+  /usr/include/sys/_types/_suseconds_t.h \
+  /usr/include/sys/_types/_fd_setsize.h \
+  /usr/include/sys/_types/_fd_set.h /usr/include/sys/_types/_fd_clr.h \
+  /usr/include/sys/_types/_fd_isset.h /usr/include/sys/_types/_fd_zero.h \
+  /usr/include/sys/_types/_fd_copy.h /usr/include/sys/_select.h \
+  /usr/include/sys/_types/_uuid_t.h /usr/include/gethostuuid.h CL/cl.h \
+  /System/Library/Frameworks/OpenCL.framework/Headers/cl_platform.h \
+  /usr/include/os/availability.h /usr/include/AvailabilityMacros.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/xmmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/mm_malloc.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/f16cintrin.h \
+  ocl_icd.h CL/cl_gl.h \
+  /System/Library/Frameworks/OpenCL.framework/Headers/cl.h CL/cl_ext.h \
+  ../../include/starpu.h ../../include/starpu_config.h \
+  /usr/include/sys/types.h /usr/include/sys/_types/_u_char.h \
+  /usr/include/sys/_types/_u_short.h /usr/include/sys/_types/_u_int.h \
+  /usr/include/sys/_types/_caddr_t.h /usr/include/sys/_types/_blkcnt_t.h \
+  /usr/include/sys/_types/_blksize_t.h \
+  /usr/include/sys/_types/_in_addr_t.h \
+  /usr/include/sys/_types/_in_port_t.h /usr/include/sys/_types/_ino_t.h \
+  /usr/include/sys/_types/_ino64_t.h /usr/include/sys/_types/_key_t.h \
+  /usr/include/sys/_types/_nlink_t.h /usr/include/sys/_types/_clock_t.h \
+  /usr/include/sys/_pthread/_pthread_cond_t.h \
+  /usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /usr/include/sys/_pthread/_pthread_once_t.h \
+  /usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /usr/include/sys/_pthread/_pthread_t.h \
+  /usr/include/sys/_pthread/_pthread_key_t.h \
+  /usr/include/sys/_types/_fsblkcnt_t.h \
+  /usr/include/sys/_types/_fsfilcnt_t.h ../../include/starpu_opencl.h \
+  /usr/include/assert.h ../../include/starpu_thread.h \
+  ../../include/starpu_util.h /usr/include/stdio.h /usr/include/_stdio.h \
+  /usr/include/sys/_types/_va_list.h /usr/include/sys/stdio.h \
+  /usr/include/secure/_stdio.h /usr/include/sys/time.h \
+  /usr/include/sys/_types/_timeval64.h /usr/include/time.h \
+  /usr/include/pthread.h /usr/include/pthread/pthread_impl.h \
+  /usr/include/pthread/sched.h /usr/include/pthread_impl.h \
+  /usr/include/pthread/qos.h /usr/include/sys/qos.h \
+  /usr/include/sys/_types/_mach_port_t.h /usr/include/semaphore.h \
+  /usr/include/sys/fcntl.h /usr/include/sys/_types/_o_sync.h \
+  /usr/include/sys/_types/_o_dsync.h /usr/include/sys/_types/_s_ifmt.h \
+  /usr/include/sys/_types/_filesec_t.h /usr/include/sys/semaphore.h \
+  ../../include/starpu_thread_util.h /usr/include/errno.h \
+  /usr/include/sys/errno.h ../../include/starpu_data.h \
+  ../../include/starpu_helper.h ../../include/starpu_disk.h \
+  ../../include/starpu_data_interfaces.h \
+  ../../include/starpu_data_filters.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stdarg.h \
+  ../../include/starpu_stdlib.h ../../include/starpu_task_bundle.h \
+  ../../include/starpu_task_dep.h ../../include/starpu_task.h \
+  ../../include/starpu_worker.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/autogen/config.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/limits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/rename.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/bitmap.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/helper.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/inlines.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/export.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/distances.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/diff.h \
+  /usr/local/Cellar/hwloc/2.0.4/include/hwloc/deprecated.h \
+  ../../include/starpu_perfmodel.h ../../include/starpu_task_list.h \
+  ../../include/starpu_task_util.h ../../include/starpu_scheduler.h \
+  ../../include/starpu_sched_ctx.h ../../include/starpu_expert.h \
+  ../../include/starpu_rand.h ../../include/starpu_cuda.h \
+  ../../include/starpu_cublas.h ../../include/starpu_cusparse.h \
+  ../../include/starpu_bound.h ../../include/starpu_hash.h \
+  ../../include/starpu_profiling.h ../../include/starpu_fxt.h \
+  ../../include/starpu_driver.h ../../include/starpu_tree.h \
+  ../../include/starpu_openmp.h ../../include/starpu_simgrid_wrap.h \
+  ../../include/starpu_bitmap.h ../../include/starpu_clusters.h \
+  ../../include/starpu_deprecated_api.h command.h command_list.h \
+  command_queue.h debug.h ../../include/../src/common/config.h event.h \
+  gc.h mem_objects.h task.h util.h
+
+socl.h:
+
+/usr/include/string.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/_symbol_aliasing.h:
+
+/usr/include/sys/_posix_availability.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/sys/_pthread/_pthread_types.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/_types/_size_t.h:
+
+/usr/include/sys/_types/_null.h:
+
+/usr/include/sys/_types/_rsize_t.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/sys/_types/_int8_t.h:
+
+/usr/include/sys/_types/_int16_t.h:
+
+/usr/include/sys/_types/_int32_t.h:
+
+/usr/include/sys/_types/_int64_t.h:
+
+/usr/include/sys/_types/_u_int8_t.h:
+
+/usr/include/sys/_types/_u_int16_t.h:
+
+/usr/include/sys/_types/_u_int32_t.h:
+
+/usr/include/sys/_types/_u_int64_t.h:
+
+/usr/include/sys/_types/_intptr_t.h:
+
+/usr/include/sys/_types/_uintptr_t.h:
+
+/usr/include/sys/_types/_errno_t.h:
+
+/usr/include/sys/_types/_ssize_t.h:
+
+/usr/include/strings.h:
+
+/usr/include/secure/_strings.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/_types/_pid_t.h:
+
+/usr/include/sys/_types/_id_t.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/machine/_mcontext.h:
+
+/usr/include/i386/_mcontext.h:
+
+/usr/include/mach/machine/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/usr/include/sys/_types/_sigaltstack.h:
+
+/usr/include/sys/_types/_ucontext.h:
+
+/usr/include/sys/_types/_sigset_t.h:
+
+/usr/include/sys/_types/_uid_t.h:
+
+/usr/include/sys/resource.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/_types/_uint8_t.h:
+
+/usr/include/_types/_uint16_t.h:
+
+/usr/include/_types/_uint32_t.h:
+
+/usr/include/_types/_uint64_t.h:
+
+/usr/include/_types/_intmax_t.h:
+
+/usr/include/_types/_uintmax_t.h:
+
+/usr/include/sys/_types/_timeval.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sys/_types/_ct_rune_t.h:
+
+/usr/include/sys/_types/_rune_t.h:
+
+/usr/include/sys/_types/_wchar_t.h:
+
+/usr/include/malloc/_malloc.h:
+
+/usr/include/sys/_types/_dev_t.h:
+
+/usr/include/sys/_types/_mode_t.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/sys/_types/_posix_vdisable.h:
+
+/usr/include/sys/_types/_seek_set.h:
+
+/usr/include/sys/_types/_gid_t.h:
+
+/usr/include/sys/_types/_off_t.h:
+
+/usr/include/sys/_types/_useconds_t.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/_types/_fd_def.h:
+
+/usr/include/sys/_types/_timespec.h:
+
+/usr/include/sys/_types/_time_t.h:
+
+/usr/include/sys/_types/_suseconds_t.h:
+
+/usr/include/sys/_types/_fd_setsize.h:
+
+/usr/include/sys/_types/_fd_set.h:
+
+/usr/include/sys/_types/_fd_clr.h:
+
+/usr/include/sys/_types/_fd_isset.h:
+
+/usr/include/sys/_types/_fd_zero.h:
+
+/usr/include/sys/_types/_fd_copy.h:
+
+/usr/include/sys/_select.h:
+
+/usr/include/sys/_types/_uuid_t.h:
+
+/usr/include/gethostuuid.h:
+
+CL/cl.h:
+
+/System/Library/Frameworks/OpenCL.framework/Headers/cl_platform.h:
+
+/usr/include/os/availability.h:
+
+/usr/include/AvailabilityMacros.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stddef.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/__stddef_max_align_t.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/xmmintrin.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/mmintrin.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/mm_malloc.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/emmintrin.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/f16cintrin.h:
+
+ocl_icd.h:
+
+CL/cl_gl.h:
+
+/System/Library/Frameworks/OpenCL.framework/Headers/cl.h:
+
+CL/cl_ext.h:
+
+../../include/starpu.h:
+
+../../include/starpu_config.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/_types/_u_char.h:
+
+/usr/include/sys/_types/_u_short.h:
+
+/usr/include/sys/_types/_u_int.h:
+
+/usr/include/sys/_types/_caddr_t.h:
+
+/usr/include/sys/_types/_blkcnt_t.h:
+
+/usr/include/sys/_types/_blksize_t.h:
+
+/usr/include/sys/_types/_in_addr_t.h:
+
+/usr/include/sys/_types/_in_port_t.h:
+
+/usr/include/sys/_types/_ino_t.h:
+
+/usr/include/sys/_types/_ino64_t.h:
+
+/usr/include/sys/_types/_key_t.h:
+
+/usr/include/sys/_types/_nlink_t.h:
+
+/usr/include/sys/_types/_clock_t.h:
+
+/usr/include/sys/_pthread/_pthread_cond_t.h:
+
+/usr/include/sys/_pthread/_pthread_condattr_t.h:
+
+/usr/include/sys/_pthread/_pthread_mutex_t.h:
+
+/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+
+/usr/include/sys/_pthread/_pthread_once_t.h:
+
+/usr/include/sys/_pthread/_pthread_rwlock_t.h:
+
+/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/usr/include/sys/_pthread/_pthread_t.h:
+
+/usr/include/sys/_pthread/_pthread_key_t.h:
+
+/usr/include/sys/_types/_fsblkcnt_t.h:
+
+/usr/include/sys/_types/_fsfilcnt_t.h:
+
+../../include/starpu_opencl.h:
+
+/usr/include/assert.h:
+
+../../include/starpu_thread.h:
+
+../../include/starpu_util.h:
+
+/usr/include/stdio.h:
+
+/usr/include/_stdio.h:
+
+/usr/include/sys/_types/_va_list.h:
+
+/usr/include/sys/stdio.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/_types/_timeval64.h:
+
+/usr/include/time.h:
+
+/usr/include/pthread.h:
+
+/usr/include/pthread/pthread_impl.h:
+
+/usr/include/pthread/sched.h:
+
+/usr/include/pthread_impl.h:
+
+/usr/include/pthread/qos.h:
+
+/usr/include/sys/qos.h:
+
+/usr/include/sys/_types/_mach_port_t.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/sys/fcntl.h:
+
+/usr/include/sys/_types/_o_sync.h:
+
+/usr/include/sys/_types/_o_dsync.h:
+
+/usr/include/sys/_types/_s_ifmt.h:
+
+/usr/include/sys/_types/_filesec_t.h:
+
+/usr/include/sys/semaphore.h:
+
+../../include/starpu_thread_util.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+../../include/starpu_data.h:
+
+../../include/starpu_helper.h:
+
+../../include/starpu_disk.h:
+
+../../include/starpu_data_interfaces.h:
+
+../../include/starpu_data_filters.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/stdarg.h:
+
+../../include/starpu_stdlib.h:
+
+../../include/starpu_task_bundle.h:
+
+../../include/starpu_task_dep.h:
+
+../../include/starpu_task.h:
+
+../../include/starpu_worker.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/autogen/config.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/limits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/rename.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/bitmap.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/helper.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/inlines.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/export.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/distances.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/diff.h:
+
+/usr/local/Cellar/hwloc/2.0.4/include/hwloc/deprecated.h:
+
+../../include/starpu_perfmodel.h:
+
+../../include/starpu_task_list.h:
+
+../../include/starpu_task_util.h:
+
+../../include/starpu_scheduler.h:
+
+../../include/starpu_sched_ctx.h:
+
+../../include/starpu_expert.h:
+
+../../include/starpu_rand.h:
+
+../../include/starpu_cuda.h:
+
+../../include/starpu_cublas.h:
+
+../../include/starpu_cusparse.h:
+
+../../include/starpu_bound.h:
+
+../../include/starpu_hash.h:
+
+../../include/starpu_profiling.h:
+
+../../include/starpu_fxt.h:
+
+../../include/starpu_driver.h:
+
+../../include/starpu_tree.h:
+
+../../include/starpu_openmp.h:
+
+../../include/starpu_simgrid_wrap.h:
+
+../../include/starpu_bitmap.h:
+
+../../include/starpu_clusters.h:
+
+../../include/starpu_deprecated_api.h:
+
+command.h:
+
+command_list.h:
+
+command_queue.h:
+
+debug.h:
+
+../../include/../src/common/config.h:
+
+event.h:
+
+gc.h:
+
+mem_objects.h:
+
+task.h:
+
+util.h:
